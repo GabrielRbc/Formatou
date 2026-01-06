@@ -138,7 +138,7 @@
         <a href="mentions_legales.php" class="text-white">Mentions Légales</a> -
         <a href="confidentialite.php" class="text-white">Politique de confidentialité</a> -
         <a href="cgv.php" class="text-white">CGV</a> -
-        <a href="contact.php" class="text-white">Nous contacter</a>
+        <a href="contact.php" class="text-white">Contacter le support</a>
     </p>
     <p>© Formatou - 2025</p>
 </footer>

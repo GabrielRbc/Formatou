@@ -128,11 +128,6 @@ $cartes = $stmt_cartes->fetchAll(PDO::FETCH_ASSOC);
             </div>
         </div>
 
-        <div class="form-group">
-            <label>Nouveau mot de passe (laisser vide pour garder l'actuel)</label>
-            <input type="password" class="form-control" name="motdepasse">
-        </div>
-
         <?php
         $age = date_diff(date_create($user_info['date_naissance']), date_create('today'))->y;
         if ($age < 15):
@@ -150,9 +145,44 @@ $cartes = $stmt_cartes->fetchAll(PDO::FETCH_ASSOC);
             </ul>
         <?php endif; endif; ?>
 
+        <div class="form-group">
+            <label>Nouveau mot de passe (laisser vide pour garder l'actuel)</label>
+            <input type="password"
+                   class="form-control"
+                   name="motdepasse"
+                   id="motdepasse">
+        </div>
 
-        <button type="submit" class="btn btn-primary">Mettre à jour</button>
-        <button type="submit" class="btn btn-primary"> Supprimer le compte</button>
+        <ul class="small" id="passwordRules" style="display:none;">
+            <li id="rule-length" class="text-danger">❌ Au moins 8 caractères</li>
+            <li id="rule-upper" class="text-danger">❌ Une lettre majuscule</li>
+            <li id="rule-lower" class="text-danger">❌ Une lettre minuscule</li>
+            <li id="rule-number" class="text-danger">❌ Un chiffre</li>
+            <li id="rule-special" class="text-danger">❌ Un caractère spécial</li>
+        </ul>
+
+        <div class="form-group">
+            <label>Mot de passe actuel <small class="text-muted">(obligatoire pour toute modification)</small></label>
+            <input type="password"
+                   class="form-control"
+                   name="motdepasse_actuel"
+                   id="motdepasse_actuel"
+                   required>
+        </div>
+
+        <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="togglePassword">
+            <label class="form-check-label" for="togglePassword">
+                Afficher les mots de passe
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary" name="action" value="update" id="btnUpdateProfil">
+            Mettre à jour
+        </button>
+        <button type="submit" class="btn btn-danger" name="action" value="delete" onclick="return confirm('Voulez-vous vraiment supprimer votre compte ?');">
+            Supprimer le compte
+        </button>
     </form>
     </section>
 
@@ -275,6 +305,6 @@ $cartes = $stmt_cartes->fetchAll(PDO::FETCH_ASSOC);
     </p>
     <p>© Formatou - 2025</p>
 </footer>
-
+<script src="fonctions/password.js"></script>
 </body>
 </html>

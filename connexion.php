@@ -138,7 +138,7 @@ unset($_SESSION['message']);
                     </label>
                 </div>
 
-                <ul class="small" id="passwordRules">
+                <ul class="small" id="passwordRules" style="display:none;">
                     <li id="rule-length" class="text-danger">❌ Au moins 8 caractères</li>
                     <li id="rule-upper" class="text-danger">❌ Une lettre majuscule</li>
                     <li id="rule-lower" class="text-danger">❌ Une lettre minuscule</li>
@@ -193,7 +193,7 @@ unset($_SESSION['message']);
         <a href="mentions_legales.php" class="text-white">Mentions Légales</a> -
         <a href="confidentialite.php" class="text-white">Politique de confidentialité</a> -
         <a href="cgv.php" class="text-white">CGV</a> -
-        <a href="contact.php" class="text-white">Nous contacter</a>
+        <a href="contact.php" class="text-white">Contacter le support</a>
     </p>
     <p>© Formatou - 2025</p>
 </footer>
