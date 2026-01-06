@@ -55,21 +55,7 @@
             des informations diffusées.
         </p>
 
-        <h2>6. Cookies</h2>
-        <h5>Qu'est-ce qu'un cookie ?</h5>
-        <p>
-            Un cookie est une information déposée sur votre disque dur par le serveur du site que vous visitez. 
-            Ils permettent notamment de collecter des informations relatives à votre navigation et d’améliorer 
-            votre expérience utilisateur.
-        </p>
-        <h5>Comment refuser les cookies ?</h5>
-        <p>
-            Vous pouvez à tout moment choisir de désactiver ces cookies dans les paramètres de votre navigateur. 
-            Pour en savoir plus sur la politique d'utilisation des cookies : 
-            <a href="cookie.php">cliquez ici</a>.
-        </p>
-
-        <h2>7. Informations sur l’entreprise</h2>
+        <h2>6. Informations sur l’entreprise</h2>
         <p>
             <strong>Formatou</strong><br>
             Entreprise de Formation 2025<br>
@@ -78,7 +64,7 @@
             Fax : +33 5 12 78 65 13
         </p>
 
-        <h2>8. Hébergement</h2>
+        <h2>7. Hébergement</h2>
         <p>
             <strong>Hébergement Factice</strong><br>
             50 avenue de Bordeaux, 12000 Rodez<br>
