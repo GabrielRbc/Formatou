@@ -120,15 +120,39 @@ unset($_SESSION['message']);
                         <input type="text" class="form-control" name="ville" required>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <label>Mot de passe</label>
-                    <input type="password" class="form-control" name="motdepasse" required>
+                    <input type="password"
+                           class="form-control"
+                           name="motdepasse"
+                           id="motdepasse"
+                           required
+                           minlength="8">
                 </div>
+
+                <div class="form-check mb-2">
+                    <input type="checkbox" class="form-check-input" id="togglePassword">
+                    <label class="form-check-label" for="togglePassword">
+                        Afficher le mot de passe
+                    </label>
+                </div>
+
+                <ul class="small" id="passwordRules">
+                    <li id="rule-length" class="text-danger">❌ Au moins 8 caractères</li>
+                    <li id="rule-upper" class="text-danger">❌ Une lettre majuscule</li>
+                    <li id="rule-lower" class="text-danger">❌ Une lettre minuscule</li>
+                    <li id="rule-number" class="text-danger">❌ Un chiffre</li>
+                    <li id="rule-special" class="text-danger">❌ Un caractère spécial</li>
+                </ul>
+
                 <div class="form-check mb-3">
                     <input type="checkbox" class="form-check-input" id="consentement" required>
                     <label for="consentement">Je reconnais avoir pris connaissance des <a href='mentions_legales.php'>Mentions légales</a> et les accepter. Et j'atteste sur l'honneur l'exactitude des informations renseignées dans le formulaire</label>
                 </div>
-                <button type="submit" class="btn btn-success btn-block">S'inscrire</button>
+                <button type="submit" class="btn btn-success btn-block" id="btnInscription" disabled>
+                    S'inscrire
+                </button>
             </form>
 
             <script>
@@ -175,5 +199,6 @@ unset($_SESSION['message']);
 </footer>
 
 <script src="style/bootstrap-4.6.2-dist/js/bootstrap.bundle.js"></script>
+<script src="fonctions/password.js"></script>
 </body>
 </html>

@@ -16,7 +16,22 @@ $adresse = trim($_POST['adresse']);
 $codePostal = trim($_POST['codePostal']);
 $ville = trim($_POST['ville']);
 $date_naissance = $_POST['date_naissance'];
-$motdepasse = password_hash($_POST['motdepasse'], PASSWORD_DEFAULT);
+
+$mdp = $_POST['motdepasse'];
+
+if (
+    strlen($mdp) < 8 ||
+    !preg_match('/[A-Z]/', $mdp) ||
+    !preg_match('/[a-z]/', $mdp) ||
+    !preg_match('/[0-9]/', $mdp) ||
+    !preg_match('/[^A-Za-z0-9]/', $mdp)
+) {
+    $_SESSION['message'] = "Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule, un chiffre et un caractère spécial.";
+    header("Location: ../connexion.php");
+    exit;
+}
+
+$motdepasse = password_hash($mdp, PASSWORD_DEFAULT);
 
 // Calcul âge
 $age = (int)date_diff(date_create($date_naissance), date_create('today'))->y;
