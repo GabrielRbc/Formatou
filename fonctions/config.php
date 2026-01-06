@@ -1,9 +1,15 @@
 <?php
 // Connexion à la base de données
-$host = 'localhost';
-$dbname = 'formatou';
-$username = 'root';
-$password = 'root'; // à adapter selon ton environnement
+if ($_SERVER["HTTP_HOST"] == "localhost") {
+    $host = "localhost";
+    $user = "root";
+    $pass = "root";
+} else {
+    $host = "mysql-formatou.alwaysdata.net";
+    $user = 'formatou';
+    $pass = 'mdpFormatou2026';
+}
+$dbname = 'formatou_bdd';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
