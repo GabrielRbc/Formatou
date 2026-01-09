@@ -26,19 +26,20 @@
         </p>
 
         <h2>2. Objectifs et fondements du traitement de vos données</h2>
-        <p>Les données collectées servent à :</p>
-        <ul>
-            <li>Gérer vos demandes d’information, d’aide ou de contact</li>
-            <li>Traiter vos inscriptions et paiements aux formations</li>
-            <li>Gérer votre compte en ligne et personnaliser votre expérience</li>
-            <li>Vous proposer nos actions et formations à proximité</li>
-            <li>Publier les résultats de formations</li>
-            <li>Respecter nos obligations légales et réglementaires</li>
-        </ul>
+
         <p>
-            Les traitements sont fondés sur l’intérêt légitime de Formatou, l’exécution d’un contrat, 
+            Les traitements sont fondés sur l’intérêt légitime de Formatou, l’exécution d’un contrat, le consentement
             ou le respect d’une obligation légale.
         </p>
+
+        <p>Les données collectées servent à :</p>
+        <ul>
+            <li>Gérer vos demandes d’information, d’aide ou de contact / Base légale Consentement</li>
+            <li>Traiter vos inscriptions et paiements aux formations / Base légale Execution d'un contrat</li>
+            <li>Gérer votre compte en ligne et personnaliser votre expérience / base légale du Consentement</li>
+            <li>Publier les résultats de formations / Base légale Execution d'un contrat</li>
+            <li>Respecter nos obligations légales et réglementaires / Base légale Obligation légale</li>
+        </ul>
 
         <h2>3. Catégories de données personnelles collectées</h2>
         <p>Les données collectées varient selon l’objectif du traitement :</p>
@@ -105,8 +106,8 @@
 
         <h2>7. Vos droits</h2>
         <p>
-            Vous disposez de droits d’accès, de rectification, de suppression, de limitation, 
-            d’opposition et de portabilité de vos données.  
+            <a href="definition.php" >Vous disposez de droits d’accès, de rectification, de suppression, de limitation,
+                d’opposition et de portabilité de vos données.</a>
             Vous pouvez exercer ces droits à tout moment par e-mail à <strong>info@formatou.fr</strong>  
             ou par courrier à :
         </p>
@@ -136,7 +137,6 @@
 <footer class="bg-dark text-white text-center py-3 mt-5">
     <p>
         <a href="mentions_legales.php" class="text-white">Mentions Légales</a> -
-        <a href="confidentialite.php" class="text-white">Politique de confidentialité</a> -
         <a href="cgv.php" class="text-white">CGV</a> -
         <a href="contact.php" class="text-white">Contacter le support</a>
     </p>

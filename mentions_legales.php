@@ -79,7 +79,6 @@
 
 <footer class="bg-dark text-white text-center py-3 mt-5">
     <p>
-        <a href="mentions_legales.php" class="text-white">Mentions Légales</a> -
         <a href="confidentialite.php" class="text-white">Politique de confidentialité</a> -
         <a href="cgv.php" class="text-white">CGV</a> -
         <a href="contact.php" class="text-white">Nous contacter</a>
